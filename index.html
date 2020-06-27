@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://d3js.org/d3.v3.min.js" ></script>
+     
+
+    <title>Search by id</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <form name="myForm" onclick="return validateForm()" required>
+  <input id="word_e2p2" type="text" name="fid" size="20" onfocus="this.value=''" value="27">
+  <input type="button" value="Search" onclick="callback_e2p2()">
+  <input type="reset" value="Clear" onclick="clear_e2p2()">  
+</form>
+    <p><!-- No text here --></p>
+<div id="target_e2p2"></div>
+    
+  </body>
+</html>
