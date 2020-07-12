@@ -7,7 +7,7 @@
    <script src="https://d3js.org/d3.v3.min.js" ></script>
      
 
-    <title>Search by id</title>
+    <title>Enter id</title>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
@@ -16,13 +16,23 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
+   
+    <!-- Remove comment A1
     <form name="myForm" onclick="return validateForm()" required>
   <input id="word_e2p2" type="text" name="fid" size="20" onfocus="this.value=''" value="0000">
   <input type="button" value="Search" onclick="callback_e2p2()">
   <input type="reset" value="Clear" onclick="clear_e2p2()">  
 </form>
-    <p><!-- No text here --></p>
+    <p></p>
 <div id="target_e2p2"></div>
-    
+-->  
+    <p id="date"></p>
+    <p>
+    Please enter your id: XXXX
+    </p>
+    <input id="myInput" type="text">
+    <button onclick="myBalance()">Enter</button>
+    <h1 id="myInfo"></h1>
+    <p id="update"></p>
   </body>
 </html>
