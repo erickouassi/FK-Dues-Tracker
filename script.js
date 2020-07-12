@@ -1,4 +1,30 @@
 
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("date").innerHTML = "Today is " + day;
+
+/** Remove comment A1
 function update_e2p2(data,columns) {
   var table = d3.select('#target_e2p2').append('table')
   var thead = table.append('thead')
@@ -26,5 +52,30 @@ function callback_e2p2(){
     update_e2p2(subset,columns) });
  
 }
+**/
 
+document.getElementById("update").innerHTML = "Last updated 7/11/2020"
+
+function myBalance() {
+  var text;
+  var balances = document.getElementById("myInput").value;
+
+  switch(balances) {
+    case "0454":
+      text = "id# 0454, my balance is $341.67 (25.32%)";
+    break;
+    case "8006":
+    text = "id# 8006, my balance is $796 (59.00%)";
+    break;
+    case "1128":
+    text = "id# 1128, my balance is $8.94 (0.67%)";
+    break;
+    case "4796":
+    text = "id# 4796, my balance is $202.57 (15.01%)";
+    break;
+    default:
+    text = "I have never heard of this person...";
+  }
+  document.getElementById("myInfo").innerHTML = text;
+}
 
